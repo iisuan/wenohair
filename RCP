@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
+int main(){
+	int pp;
+	printf("가위 바위 보!: ");
+	printf("\n 가위 1 바위2  보3 \n");
+	scanf("%d",&pp);
+	srand(time(NULL));
+	int n=rand()%100;
+	if(n<2&&pp==1){
+		printf("너는 가위 나는 보 !!오 ");
+	}
+	else if(n>90&&pp==1){
+		printf("너는 가위 나는 가위 !!ㅋ ");		
+	}
+	else if(pp==1){
+		printf("너는 가위 나는 바위  !!ㅋㅋㅋㅋㅋ ");		
+	} 
+	
+	if(n<2&&pp==2){
+		printf("너는 바위 나는 가위 !!오 ");
+	}
+	else if(n>90&&pp==2){
+		printf("너는 바위 나는 바위 !!ㅋ ");		
+	}
+	else if(pp==2){
+		printf("너는 바위 나는 보  !!ㅋㅋㅋㅋㅋ ");		
+	}	
+	
+	if(n<2&&pp==3){
+		printf("너는 보 나는 주먹 !!오 ");
+	}
+	else if(n>90&&pp==3){
+		printf("너는 보 나는 보 !!ㅋ ");		
+	}
+	else if(pp==3){
+		printf("너는 보 나는 가위  !!ㅋㅋㅋㅋㅋ ");		
+	}	
+	return 0; 
+}
